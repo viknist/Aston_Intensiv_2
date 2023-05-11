@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/firstTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/task_1_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/secondTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/task_1_2_a"
+        app:layout_constraintStart_toStartOf="@+id/firstTaskButton"
+        app:layout_constraintTop_toBottomOf="@+id/firstTaskButton" />
+
+    <Button
+        android:id="@+id/thirdTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/task_1_2_b"
+        app:layout_constraintStart_toStartOf="@+id/secondTaskButton"
+        app:layout_constraintTop_toBottomOf="@+id/secondTaskButton" />
+
+    <Button
+        android:id="@+id/fourthTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/task_1_3"
+        app:layout_constraintStart_toStartOf="@+id/firstTaskButton"
+        app:layout_constraintTop_toBottomOf="@+id/thirdTaskButton" />
+
+    <Button
+        android:id="@+id/fifthTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/task_2_1"
+        app:layout_constraintStart_toStartOf="@+id/fourthTaskButton"
+        app:layout_constraintTop_toBottomOf="@+id/fourthTaskButton" />
+
+    <Button
+        android:id="@+id/sixthTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/task_2_2"
+        app:layout_constraintStart_toStartOf="@+id/fifthTaskButton"
+        app:layout_constraintTop_toBottomOf="@+id/fifthTaskButton" />
+
+    <Button
+        android:id="@+id/seventhTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/task_2_3"
+        app:layout_constraintStart_toStartOf="@+id/sixthTaskButton"
+        app:layout_constraintTop_toBottomOf="@+id/sixthTaskButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
